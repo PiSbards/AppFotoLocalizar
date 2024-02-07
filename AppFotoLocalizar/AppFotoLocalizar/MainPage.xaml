@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFotoLocalizar.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Tire uma foto e descubra onde você esta" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Button Text="Tirar Foto" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White" 
+                CornerRadius="20" x:Name="btnTirar" Clicked="btnTirar_Clicked" Padding="0,20,0,20" BackgroundColor="ForestGreen"/>
+            <Image x:Name="foto"/>
+            <Button Text="Localizar" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"
+                CornerRadius="20" x:Name="btnLocalizar" Clicked="btnLocalizar_Clicked" Padding="0,20,0,20" BackgroundColor="Blue"/>
+        </StackLayout>
+    </ScrollView>
+    
+
+</ContentPage>
